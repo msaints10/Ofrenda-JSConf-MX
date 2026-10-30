@@ -1,0 +1,12 @@
+# Ofrenda estática de Crazy, publicada desde la rama main con AWS Amplify.
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - mkdir -p dist
+        - cp index.html styles.css script.js foto-crazy.svg dist/
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
