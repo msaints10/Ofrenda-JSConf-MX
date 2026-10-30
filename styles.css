@@ -1,15 +1,6 @@
-/*
-  TODO 4: Elige el color de tu ofrenda.
-  Cambia el valor de --acento por uno de estos colores o por otro que te guste:
-    Cempasúchil   #FF9F1C
-    Rosa mexicano #FF4FA3
-    Turquesa      #3FD0C2
-    Rojo          #F22727
-    Lila          #B98CFF
-  Ejemplo: --acento: #FF4FA3;
-*/
+/* Rosa mexicano como acento del homenaje; el altar conserva flores cempasúchil y fondo morado. */
 :root {
-  --acento: #FF9F1C;
+  --acento: #FF4FA3;
 }
 
 /* A partir de aquí no necesitas cambiar nada, pero puedes explorar */
@@ -117,16 +108,26 @@ body {
 }
 
 .titulo {
-  max-width: 14ch;
+  max-width: 20ch;
   margin: 0;
   font-family: var(--fuente-titulo);
-  font-size: clamp(2.5rem, 8.5vw, 5.25rem);
+  font-size: clamp(2.25rem, 7vw, 4.5rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--acento);
   text-wrap: balance;
   text-shadow: -4px 4px 0 #F9CA22;
+}
+
+.subtitulo {
+  margin: 1.1rem 0 0;
+  max-width: 30ch;
+  font-size: clamp(1.2rem, 3.3vw, 1.85rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--cera);
+  text-wrap: balance;
 }
 
 /* Altar */
@@ -195,7 +196,7 @@ body {
   outline-offset: 3px;
   box-shadow: 0 10px 24px rgb(0 0 0 / 0.45);
   rotate: -3deg;
-  filter: brightness(0.55) saturate(0.7);
+  filter: brightness(0.72) saturate(0.85);
   transition: filter 1s ease;
 }
 
